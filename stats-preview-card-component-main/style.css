@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box {
+    margin: 50vh auto;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    border-radius: 7px;
+}
+
+.left {
+    padding: 6rem;
+    overflow: hidden;
+}
+
+.right {
+    width: 120%;
+    background: linear-gradient(to right, rgba(98, 26, 143, 0.68), rgba(98, 26, 143, 0.68)), url(images/image-header-desktop.jpg), center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    /* background: center cover; */
+
+}
+
+.purple {
+    color: hsl(277, 64%, 61%);
+}
+
+.left-title,
+.left-text {
+    margin-bottom: 3.5rem;
+    font-size: 3.5rem;
+}
+
+.left-text,
+.nm {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.left-text {
+    margin-right: 4rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    text-align: left;
+}
+
+
+.left-connect {
+    margin-right: 5rem;
+    padding-right: 3rem;
+    margin-top: 5.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.nm {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: .75rem;
+}
+
+/* Mobile Screen  */
+
+@media screen and (max-width: 380px) {
+    .box {
+        flex-direction: column;
+        margin: 20vh auto;
+    }
+
+    .right {
+        order: 0;
+        height: 50vh;
+        width: auto;
+        border-top-left-radius: 7px;
+        border-bottom-right-radius: 0;
+    }
+
+    .left {
+        order: 1;
+        padding: 3.5rem;
+    }
+
+    .left-title {
+        font-size: 2.2rem;
+        text-align: center;
+        margin: 1rem 0 2.5rem 0;
+    }
+    .left-text, .left-connect {
+        margin: 3rem 0 0 0;
+        padding: 0;
+        text-align: center;
+    }
+    .left-connect {
+        flex-direction: column;
+        align-items: center;
+    }
+    ul {
+        margin-top: 2rem;
+    }
+    .nm {
+        margin-top: .5rem;
+    }
+}
